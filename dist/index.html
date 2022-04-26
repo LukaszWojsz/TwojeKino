@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TwojeKino</title>
+  <script defer src="53789891e914c37c4237.bundle.js"></script><script defer src="84c7f5456b949dad7d24.bundle.js"></script><link href="index.css" rel="stylesheet"><link href="home.css" rel="stylesheet"></head>
+  <body id="body">
+    <nav class="main-nav" id="navbar">
+      <div class="logo">
+        <a href=""><img src="./assets/img/logo.png" alt="logo" /></a><p id="logoTitle"> <a href="">TwojeKino</a> </p>
+      </div>
+      <div class="logInNavBtn">
+        <h1 id="logInTxt">Zaloguj</h1>
+        <h1 id="logOutTxt" style="display: none"></h1>
+        <div class="login-container" id="login-container">
+          <form class="form" id="loginForm">
+            <h1>Zaloguj</h1>
+            <input type="text" id="userName" autofocus placeholder="Login" />
+            <input type="password" id="userPassword" placeholder="Hasło" />
+            <input type="button" value="Zaloguj" id="loginBtn" />
+            <p id="wrongLog">Błędne dane logowania</p>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Movie container START -->
+    <div id="onScreen">
+      <h1>Aktualnie na ekranie</h1>
+    </div>
+    <div class="movie-container" id="movieContainer">
+      <div class="movie-box">
+        <div id="encantoMovie">
+          <div class="buyBtn" className="buyBtn" id="buyBtn3">
+            <p>Kup bilet</p>
+          </div>
+        </div>
+        <div id="movieTitle">
+          <p id="encantoTitle"></p>
+        </div>
+      </div>
+      <div class="movie-box">
+        <div id="batmanMovie">
+          <div class="buyBtn" className="buyBtn" id="buyBtn1">
+            <p>Kup bilet</p>
+          </div>
+        </div>
+        <div id="movieTitle">
+          <p id="batmanTitle"></p>
+        </div>
+      </div>
+      <div class="movie-box">
+        <div class="buyBtn" className="buyBtn" id="buyBtn2">
+          <p>Kup bilet</p>
+        </div>
+        <div id="unchartedMovie"></div>
+        <div id="movieTitle">
+          <p id="unchartedTitle"></p>
+        </div>
+      </div>
+    </div>
+    <div id="mustBeLogged">
+      <h3>Musisz być zalogowany aby kupić bilet!</h3>
+    </div>
+    <!-- Movie container END -->
+  </body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>TwojeKino</title>
+  </head>
+  <body id="body">
+    <nav class="main-nav">
+      <div class="logo">
+        <a href=""><img src="./assets/img/logo.png" alt="logo" /></a><p id="logoTitle"> <a href="">TwojeKino</a> </p>
+      </div>
+      <div class="logInNavBtn">
+        <!-- <i class='far fa-user-circle' style='font-size:48px; margin: auto 20px;'></i> -->
+        <h1 id="logOutTxt"></h1>
+        <div class="login-container">
+          <form class="loggedInForm">
+            <h3 id="loggedAsUser"></h3>
+            <input type="button" value="Wyloguj" id="logoutBtn" />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="onScreen">
+      <h1>Aktualnie na ekranie</h1>
+    </div>
+    <!-- Choose movie START -->
+    <div class="movie-container" id="movieContainer">
+      <div class="movie-box" id="encanto">
+        <div id="encantoMovie">
+          <div class="description">
+            <div id="encantoDescription">
+              <p id="encantoCategory"></p>
+              <p id="encantoLength"></p>
+              <p id="encantoPremiere"></p>
+            </div>
+          </div>
+        </div>
+        <div id="movieTitle">
+          <p id="encantoTitle"></p>
+        </div>
+      </div>
+      <div class="movie-box" id="batman">
+        <div id="batmanMovie">
+          <div class="description">
+            <div id="batmanDescription">
+              <p id="batmanCategory"></p>
+              <p id="batmanLength"></p>
+              <p id="batmanPremiere"></p>
+            </div>
+          </div>
+          
+        </div>
+        <div id="movieTitle">
+          <p id="batmanTitle"></p>
+        </div>
+      </div>
+      <div class="movie-box" id="uncharted">
+        <div id="unchartedMovie">
+          <div class="description">
+            <div id="unchartedDescription">
+              <p id="unchartedCategory"></p>
+              <p id="unchartedLength"></p>
+              <p id="unchartedPremiere"></p>
+            </div>
+          </div>
+          
+        </div>
+        <div id="movieTitle">
+          <p id="unchartedTitle"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Choose movie END -->
+    <!-- Choose seats Start -->
+    <div class="container"> 
+      
+      <div class="left-column" id="firstColumn">
+        <i class="fas fa-calendar-alt" id="calendarIcon"></i>
+        <input type="date" id="chooseDate" name="chooseDate" min="">
+        <i class='fas fa-film' id="filmIcon"></i>
+        <select id="movie">
+          <option value="Batman">Batman 16:30</option>
+          <option value="Nasze Magiczne Encanto">Nasze Magiczne Encanto 14:00</option>
+          <option value="Uncharted">Uncharted 19:00</option>
+        </select>
+        <i class='fas fa-map-marked-alt' id="locationIcon"></i>
+        <select id="cinemaPlace">
+          <option value="">-</option>
+          <option id="katowice" value="Katowice">Katowice (bilet: 16zł)</option>
+          <option id="krakow" value="Kraków">Kraków (bilet: 18zł)</option>
+          <option id="gliwice" value="Gliwice">Gliwice (bilet: 16zł)</option>
+        </select>
+        <button type="submit" class="chooseSeatsBtn" id="chooseSeatsBtn">Wybierz miejsca</button>
+      </div>
+      <div><ul class="showcase" id="showcase" style="display: none;">
+          <li>
+            <div class="seat"></div>
+            <small>Dostępne</small>
+          </li>
+          <li>
+            <div class="seat selected"></div>
+            <small>Wybrane</small>
+          </li>
+          <li>
+            <div class="seat sold"></div>
+            <small>Zajęte</small>
+          </li>
+        </ul>
+      <div id="seat-container" style="display: none;">        
+        <div class="screen"></div>
+
+        <div id="smallHall">
+          <div class="row">
+            <span id="rowSign"></span>
+            <div class="rowNum">1</div>
+            <div class="rowNum">2</div>
+            <div class="rowNum">3</div>
+            <div class="rowNum">4</div>
+            <div class="rowNum">5</div>
+            <div class="rowNum">6</div>
+            <div class="rowNum">7</div>
+            <div class="rowNum">8</div>
+          </div>
+        <div class="row">
+          <span id="rowSign">A</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">B</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">C</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">D</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">E</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">F</span>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">G</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">H</span>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">I</span>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">J</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        </div>  
+        <div id="bigHall">
+        <div class="row">
+          <span id="rowSign"></span>
+          <div class="rowNum">1</div>
+          <div class="rowNum">2</div>
+          <div class="rowNum">3</div>
+          <div class="rowNum">4</div>
+          <div class="rowNum">5</div>
+          <div class="rowNum">6</div>
+          <div class="rowNum">7</div>
+          <div class="rowNum">8</div>
+          <div class="rowNum">9</div>
+          <div class="rowNum">10</div>
+          <div class="rowNum">11</div>
+          <div class="rowNum">12</div>
+        </div>
+        <div class="row">
+          <span id="rowSign">A</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">B</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">C</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">D</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">E</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">F</span>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">G</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">H</span>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <span id="rowSign">I</span>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        
+        <div class="row"> 
+          <span id="rowSign">J</span>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        </div> 
+        <button type="submit" class="submitBtn" id="submitBtn">Potwierdź</button>
+      </div>
+      <div class="right-column" id="summary" style="display: none;">
+        <h1>Podsumowanie</h1>
+        <h3>Tytuł filmu: <span id="choosenMovie"></span></h3>
+        <h3>Twoje kino: <span id="cinema" class="cinema"></span></h3>
+        <h3>Data: <span id="date"></span></h3>
+        <h3>Godzina: <span id="hour"></span></h3>
+        <h3>Ilość miejsc: <span id="seatsCount"></span></h3>
+        <h3>Cena: <span id="price"></span> zł</h3>
+        <button type="submit" class="finishBtn" id="finishBtn">Potwierdź zamówienie</button>
+      </div>
+    </div>
+    </div>
+    
+
+    <!-- Choose seats END -->
+  </body>
+</html>

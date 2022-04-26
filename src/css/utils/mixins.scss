@@ -1,0 +1,124 @@
+@mixin loginNavBtn(){
+    width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+        &:hover{
+            .login-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+    }
+}
+
+@mixin logo(){
+    width: 200px;
+    height: auto;
+    // display: flex; 
+    // padding: 10px;
+    // margin: 0;
+    // padding: 10px;
+}
+@mixin buyButton(){
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid darkred;
+    text-align: center;
+    color: $text-color;
+    border-radius: 25px;
+    visibility: hidden;
+    position: absolute;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+    @include centerer();
+}
+// @mixin moviesBox(){
+//     width: 300px;
+//     height: 500px;
+//     margin: 50px;
+//     overflow: hidden;
+//     border: 1px solid red;
+//     border-radius: 25px;
+//     z-index: 0;
+//     cursor: pointer;
+// } 
+
+@mixin changeMovieBox(){
+    transform: scale(1.1);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    border: 2px solid red;
+    opacity: 0.8;
+}
+
+
+@mixin navBar(){
+        background-color: rgb(193, 10, 10);
+        height: 3.75em;
+        padding: 0px ;
+        #logInTxt {
+            font-weight: 400;
+            font-size: 1.2em;
+            color: aliceblue;
+            text-align: center; 
+            transition: 0.5s;
+            &:hover{
+                transition: 0.5s;
+                color: darkred;
+                cursor: pointer;
+            }
+        }
+        #logOutTxt {
+            font-weight: 400;
+            font-size: 1.2em;
+            color: aliceblue;
+            text-align: center; 
+            transition: 0.5s;
+            &:hover{ 
+                transition: 0.5s;
+                color: darkred;
+                cursor: pointer;
+            }
+        }
+}
+
+@mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+@mixin inputStyle{ 
+    height: 50px;
+    width: auto;
+    background-color: black;
+    border: 1px solid red;
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+}
+@mixin buttonStyle{
+    height: 50px;
+    width: auto;
+    font-weight: bold; 
+    text-transform: uppercase;
+    background-color: darkred;
+    opacity: 0.9;
+    border: 1px solid red; 
+    margin: 10px; 
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(139, 0, 0, 0.34);
+
+    }
+}
+
+
+
+
+
