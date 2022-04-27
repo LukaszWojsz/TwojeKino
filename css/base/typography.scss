@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet');
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+body{
+    background-color: $background-color;
+    font-family: $font-family;
+    z-index: 0;
+    a{
+        text-decoration: $linkDecoration;
+    }
+    margin: auto auto;
+    color: $text-color;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    .logo{
+        @include logo();
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: row; 
+        img{
+            width: 50px;
+            height: auto;
+            display: flex;
+            margin-right: 10px;
+        };
+        a{
+            height: auto; 
+        }
+        // #logoTitle{
+        //         font-size: large;
+        //     }
+        p{
+            font-size: x-large;
+            background-color: $text-color;
+            text-decoration: none; 
+            font-weight: bold;
+            background-image: linear-gradient(45deg, black, darkred);  
+            background-size: 100%; 
+            background-clip: text;
+            -webkit-background-clip: text; 
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent; 
+        }
+    }
+}
+.left-column{
+    #movie{
+        @include inputStyle();
+    }
+    #cinemaPlace{
+        @include inputStyle();
+    }
+    #chooseDate{
+        @include inputStyle();
+    }
+    .chooseSeatsBtn{
+        @include buttonStyle();
+        margin-bottom: 10px; 
+        margin-top: 10px;
+    }
+}
+.login-container{
+    height: 300px;
+    width: 200px;
+    background-color: rgba(193, 10, 10, 0.6);
+    position: relative; 
+    display: none;
+    transition: all .2s ease-in-out; 
+    h1{
+        font-weight: 400;
+        font-size: 1.2em;
+        color: aliceblue;
+        text-align: center; 
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        p{
+            font-size: 24px
+        }
+        #userName{
+            @include inputStyle();
+        }
+        #userPassword{
+            @include inputStyle();
+        }
+        #loginBtn{
+            @include buttonStyle();
+            width: auto;
+        }
+    }
+    .loggedInForm{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h3{ 
+            color: aliceblue;
+        }
+        #logoutBtn{
+            display: flex;
+            @include buttonStyle();
+            width: auto;
+        }}
+
+    #wrongLog{
+        display: none;
+        color: red;
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
