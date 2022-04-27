@@ -1,7 +1,7 @@
 {
-  "name": "zadanie_scss",
+  "name": "twoje_kino",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cognitive Load",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,6 +19,7 @@
     "babel-loader": "^8.2.3",
     "copy-webpack-plugin": "^10.2.0",
     "css-loader": "^6.5.1",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.4.5",
     "node-sass": "^7.0.1",
