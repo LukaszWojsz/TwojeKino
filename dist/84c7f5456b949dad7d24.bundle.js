@@ -1,10 +1,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/seats.js":
-/*!**********************!*\
-  !*** ./src/seats.js ***!
-  \**********************/
+/***/ 5:
 /***/ (() => {
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -151,10 +148,7 @@ updateSelectedCount();
 
 /***/ }),
 
-/***/ "./src/css/index.scss":
-/*!****************************!*\
-  !*** ./src/css/index.scss ***!
-  \****************************/
+/***/ 1:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -236,12 +230,9 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/*!*********************!*\
-  !*** ./src/home.js ***!
-  \*********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/index.scss */ "./src/css/index.scss");
-/* harmony import */ var _seats__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./seats */ "./src/seats.js");
+/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _seats__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
 /* harmony import */ var _seats__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_seats__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -382,4 +373,4 @@ document.getElementById('encantoMovie').addEventListener('click', function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=f2201afe5ceebaf8040a.bundle.js.map
+//# sourceMappingURL=84c7f5456b949dad7d24.bundle.js.map
