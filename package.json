@@ -3,7 +3,7 @@
   "name": "twoje_kino",
   "version": "1.0.0",
   "description": "Cognitive Load",
-  "main": "./src/index.js",
+  "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

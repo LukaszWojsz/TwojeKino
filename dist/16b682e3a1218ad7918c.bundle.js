@@ -1,16 +1,10 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ([
-/* 0 */,
-/* 1 */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/******/ 	var __webpack_modules__ = ({
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-/* 2 */
+/***/ "./src/login.js":
+/*!**********************!*\
+  !*** ./src/login.js ***!
+  \**********************/
 /***/ (() => {
 
 var loggedIn = false;
@@ -90,7 +84,11 @@ document.getElementById('loginBtn').addEventListener('click', function () {
 });
 
 /***/ }),
-/* 3 */
+
+/***/ "./src/logout.js":
+/*!***********************!*\
+  !*** ./src/logout.js ***!
+  \***********************/
 /***/ (() => {
 
 // document.getElementById('logoutBtn').addEventListener('click', function(){
@@ -98,8 +96,22 @@ document.getElementById('loginBtn').addEventListener('click', function () {
 //     console.log('Zostałeś wylogowany')
 // })
 
+/***/ }),
+
+/***/ "./src/css/index.scss":
+/*!****************************!*\
+  !*** ./src/css/index.scss ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
 /***/ })
-/******/ 	]);
+
+/******/ 	});
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -171,11 +183,14 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _login__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/index.scss */ "./src/css/index.scss");
+/* harmony import */ var _login__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./login */ "./src/login.js");
 /* harmony import */ var _login__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_login__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _logout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
+/* harmony import */ var _logout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./logout */ "./src/logout.js");
 /* harmony import */ var _logout__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_logout__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -209,4 +224,4 @@ document.getElementById("encantoTitle").innerHTML = encantoMovie.name;
 
 /******/ })()
 ;
-//# sourceMappingURL=53789891e914c37c4237.bundle.js.map
+//# sourceMappingURL=16b682e3a1218ad7918c.bundle.js.map
