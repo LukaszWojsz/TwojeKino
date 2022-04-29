@@ -119,7 +119,7 @@ document.getElementById("finishBtn").addEventListener("click", function () {
   alert("Za chwilę zostaniesz wylogowany i przekierowany do strony głównej");
   document.getElementById("finishBtn").disabled = true;
   setTimeout(function () {
-    window.location = "/";
+    location.href = "/TwojeKino/";
     localStorage.clear();
   }, 5000);
 });
