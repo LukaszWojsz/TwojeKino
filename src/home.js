@@ -50,14 +50,14 @@ window.onload = load;
 function load() {
     localStorage.removeItem('selectedMovieIndex');
     if(username == null){
-        window.location = '/'
+        window.location = '/TwojeKino/'
     }
 };
 document.getElementById("logoutBtn").addEventListener('click', function(){
     loggedIn = false;
     console.log(loggedIn);
     if(loggedIn == false){
-        window.location = '/';
+        window.location = '/TwojeKino/';
         localStorage.clear();
     }
 });
