@@ -279,7 +279,7 @@ function load() {
   localStorage.removeItem('selectedMovieIndex');
 
   if (username == null) {
-    location.href = 'TwojeKino';
+    location.href = '/TwojeKino/';
   }
 }
 
@@ -289,7 +289,7 @@ document.getElementById("logoutBtn").addEventListener('click', function () {
   console.log(loggedIn);
 
   if (loggedIn == false) {
-    location.href = 'TwojeKino';
+    location.href = '/TwojeKino/';
     localStorage.clear();
   }
 });
@@ -373,4 +373,4 @@ document.getElementById('encantoMovie').addEventListener('click', function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=868a0d2dfb299598ba5f.bundle.js.map
+//# sourceMappingURL=e9a3c6b97ee87f250f20.bundle.js.map
