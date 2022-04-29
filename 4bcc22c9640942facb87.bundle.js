@@ -133,7 +133,7 @@ document.getElementById("finishBtn").addEventListener("click", function () {
   alert("Za chwilę zostaniesz wylogowany i przekierowany do strony głównej");
   document.getElementById("finishBtn").disabled = true;
   setTimeout(function () {
-    window.location = "/";
+    location.href = "/TwojeKino/";
     localStorage.clear();
   }, 5000);
 });
@@ -373,4 +373,4 @@ document.getElementById('encantoMovie').addEventListener('click', function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=e9a3c6b97ee87f250f20.bundle.js.map
+//# sourceMappingURL=4bcc22c9640942facb87.bundle.js.map
