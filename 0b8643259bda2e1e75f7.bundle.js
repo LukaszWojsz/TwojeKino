@@ -279,7 +279,7 @@ function load() {
   localStorage.removeItem('selectedMovieIndex');
 
   if (username == null) {
-    window.location = URL('https://lukaszwojsz.github.io/TwojeKino/');
+    window.location.href = '/TwojeKino/';
   }
 }
 
@@ -289,7 +289,7 @@ document.getElementById("logoutBtn").addEventListener('click', function () {
   console.log(loggedIn);
 
   if (loggedIn == false) {
-    window.location = URL('https://lukaszwojsz.github.io/TwojeKino/');
+    window.location.href = '/TwojeKino/';
     localStorage.clear();
   }
 });
@@ -373,4 +373,4 @@ document.getElementById('encantoMovie').addEventListener('click', function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=b9895d7be28a67310e29.bundle.js.map
+//# sourceMappingURL=0b8643259bda2e1e75f7.bundle.js.map
