@@ -53,7 +53,7 @@ document.getElementById('loginBtn').addEventListener('click', function() {
 			console.log(username + " is logged in!!!");
             console.log(loggedIn); 
             if(loggedIn == true){
-                window.location = 'home.html';
+            	location.href= '/TwojeKino/home';
                 }
 			// stop the function if this is found to be true
 			return;

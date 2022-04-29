@@ -71,7 +71,7 @@ document.getElementById('loginBtn').addEventListener('click', function () {
       console.log(loggedIn);
 
       if (loggedIn == true) {
-        window.location = 'home.html';
+        location.href = '/TwojeKino/home';
       } // stop the function if this is found to be true
 
 
@@ -209,4 +209,4 @@ document.getElementById("encantoTitle").innerHTML = encantoMovie.name;
 
 /******/ })()
 ;
-//# sourceMappingURL=45278a37b27e168b639d.bundle.js.map
+//# sourceMappingURL=cf77ed3614dcc5045afc.bundle.js.map
