@@ -50,14 +50,14 @@ window.onload = load;
 function load() {
     localStorage.removeItem('selectedMovieIndex');
     if(username == null){
-        window.location = URL('https://lukaszwojsz.github.io/TwojeKino/');
+        window.location.href = '/TwojeKino/';
     }
 };
 document.getElementById("logoutBtn").addEventListener('click', function(){
     loggedIn = false;
     console.log(loggedIn);
     if(loggedIn == false){
-        window.location = URL('https://lukaszwojsz.github.io/TwojeKino/');
+        window.location.href = '/TwojeKino/';
         localStorage.clear();
     }
 });
