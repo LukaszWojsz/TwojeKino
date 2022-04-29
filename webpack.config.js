@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+
 module.exports = {
     entry: {
         "index": "./src/index.js",
@@ -10,6 +11,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, "dist"),
+        publicPath: "/TwojeKino/",
         filename: "[contenthash].bundle.js",
         clean: true,
         
